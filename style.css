@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.div-container {
+  display: flex;
+}
+
+.div-box {
+  border: 1px solid black;
+
+  width: 50px;
+  height: 50px;
+}
