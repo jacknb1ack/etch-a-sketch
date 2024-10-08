@@ -10,3 +10,10 @@ for (let x = 0; x < 16; x++) {
     divContainer.appendChild(divBox);
   }
 }
+
+const action = document.querySelectorAll(".div-box");
+action.forEach((div) => {
+  div.addEventListener("mouseover", () => {
+    div.classList.add("colored");
+  });
+});
