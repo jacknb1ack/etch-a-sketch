@@ -5,10 +5,12 @@
 
 body {
   max-width: 960px;
+  border: 1px red double;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 10px;
 }
 
 button {
@@ -16,11 +18,13 @@ button {
   margin: 10px auto;
 }
 .container {
-  width: 600px;
-  height: 600px;
+  width: 850px;
+  height: 850px;
   display: flex;
-  flex-direction: column;
+
   border: 1px blue dotted;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 .div-container {
   display: flex;
@@ -29,6 +33,7 @@ button {
 
 .div-box {
   border: 1px solid black;
+  flex-wrap: wrap;
   flex: 1;
 }
 
