@@ -6,14 +6,11 @@
 body {
   max-width: 960px;
   border: 1px red double;
-.container {
   display: flex;
   flex-direction: column;
-  gap: 0;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 10px;
+  margin: auto;
 }
 
 button {
@@ -26,20 +23,18 @@ button {
   display: flex;
 
   border: 1px blue dotted;
-  justify-content: space-around;
-  align-items: flex-start;
+  flex-direction: column;
   margin-top: 30px;
 }
 .div-container {
   display: flex;
+  flex: 1;
 }
 
 .div-box {
   border: 1px solid black;
-  flex-wrap: wrap;
+  content: "";
   flex: 1;
-  min-width: 20px;
-  min-height: 20px;
 }
 
 .colored {
