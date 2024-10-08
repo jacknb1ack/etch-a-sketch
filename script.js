@@ -1,8 +1,17 @@
 const container = document.querySelector(".container");
+<<<<<<< HEAD
 createGrid(16);
 function createGrid(input) {
   const number = input * input;
   for (let y = 0; y < number; y++) {
+=======
+
+for (let x = 0; x < 16; x++) {
+  const divContainer = document.createElement("div");
+  divContainer.setAttribute("class", "div-container");
+  container.appendChild(divContainer);
+  for (let y = 0; y < 16; y++) {
+>>>>>>> parent of daad718 (fix div dimension to fill container)
     const divBox = document.createElement("div");
     divBox.setAttribute("class", "div-box");
     container.appendChild(divBox);
