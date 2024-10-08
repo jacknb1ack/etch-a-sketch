@@ -39,7 +39,19 @@ function createGrid(input) {
   let action = document.querySelectorAll(".container .div-box");
   action.forEach((div) => {
     div.addEventListener("mouseover", () => {
-      div.classList.add("colored");
+      //   div.classList.add("colored"); //for black color
+      div.setAttribute("style", "background-color:" + randomColor() + ";");
     });
   });
+}
+
+function randomColor() {
+  let hex = "0123456789ABCDEF";
+  let color = "#";
+
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+
+  return color;
 }
